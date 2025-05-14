@@ -22,8 +22,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker Image
-        run: docker build -t tejasmore09/nodejs-demo-app .
-
+      - name: Build Docker image
+        run: docker build -t tejasmore0911/nodejs-demo-app .
+          
       - name: Push image to DockerHub
-        run: docker push tejasmore09/nodejs-demo-app
+        run: docker push tejasmore0911/nodejs-demo-app
+  
